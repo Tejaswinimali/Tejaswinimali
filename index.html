@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejaswini | Mehendi Designer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .background-wrapper {
+      background: url('assets/imgs/bg.jpg') center/cover no-repeat;
+      min-height: 100vh;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+
+    .services-section {
+      background-color: #f8f9fa;
+      padding: 80px 0;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    :root {
+      --teal: #2ec1ac;
+      --teal-hover: #279e8c;
+    }
+
+    .h-font {
+      font-family: "Tomorrow", sans-serif;
+      font-weight: 900;
+      font-style: Times New Roman;
+    }
+
+    .custom-bg {
+      background-color: var(--teal);
+      border: 1px solid var(--teal);
+    }
+
+    .custom-bg:hover {
+      background-color: var(--teal-hover);
+      border-color: var(--teal-hover);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-3 h-font" href="#">Tejaswini | Mehendi Designer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="background-wrapper" id="home">
+    <div class="hero-content">
+      <h2>Hi! I'm Tejaswini</h2>
+      <p>Mehendi Designer</p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h3 class="text-center fw-bold h-font mb-5">Our Services</h3>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img src="assets/imgs/henna.jpg" class="card-img-top" alt="Heena Body Tattoos">
+            <div class="card-body">
+              <h5 class="card-title">Heena Body Tattoos</h5>
+              <p class="card-text">Applied on arms, wrists, and more. Beautiful body art for all occasions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img src="assets/imgs/orenament.jpg" class="card-img-top" alt="Ornament Tattoos">
+            <div class="card-body">
+              <h5 class="card-title">Ornament Tattoos</h5>
+              <p class="card-text">Creative patterns and symbols to enhance your unique look.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img src="assets/imgs/bridal.jpg" class="card-img-top" alt="Bridal Services">
+            <div class="card-body">
+              <h5 class="card-title">Bridal Services</h5>
+              <p class="card-text">Traditional and elegant Mehendi for weddings and special events.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img src="assets/imgs/professinal.jpg" class="card-img-top" alt="Professional Training">
+            <div class="card-body">
+              <h5 class="card-title">Professional Training</h5>
+              <p class="card-text">Master the art of Mehendi with our hands-on training programs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container">
+      <h3 class="fw-bold h-font text-center mb-4">About Us</h3>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4">
+          <h4>Mehendi Designer</h4>
+          <p>
+            A Mehendi designer creates intricate and beautiful henna patterns for hands, feet, and more.
+            Specialized in traditional and modern styles, perfect for weddings, festivals, and celebrations.
+          </p>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <img src="assets/imgs/me.jpeg" class="w-100 rounded shadow" alt="Tejaswini">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h3 class="fw-bold h-font text-center mb-4">Contact Us</h3>
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="bg-white rounded shadow p-4">
+            <h5>Call Us</h5>
+            <p><a href="tel:+917752894578" class="text-decoration-none text-dark">+91 9307625224</a></p>
+            <h5>Email</h5>
+            <p><a href="mailto:tejaswinimali0326@gmail.com" class="text-decoration-none text-dark">tejaswinimali0326@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form form  method="POST" action="contact_contact.php" class="bg-white p-4 rounded shadow">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Tejaswini Mali. All Rights Reserved.</p>
+  </footer>
+
+
+ <!--scrolling js--->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
